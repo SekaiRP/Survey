@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sekai Survey</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body dir="rtl">
+<header>
+  <div class="title">
+    <h2><span>Sekai</span>
+    Role
+    <span style="color: green;">Play</span></h2>
+    <img src="denji_icon.png" alt="" >
+    <div>ممنون که با تکمیل فرم زیر مارو در اداره آرپی یاری میدید</div>
+  </div>  
+</header>
+<main>
+<form method="post" action="//submit.form" onSubmit="return validateForm();">
+<div style="max-width: 400px;">
+</div>
+<div style="padding-bottom: 18px;">چطور با آرپی سکای آشنا شدید؟<span style="color: red;"> *</span><br/>
+<select id="data_20" name="data_20" style="" class="form-control"><option>معرفی توسط دوست</option>
+<option>تبلیغات</option>
+<option>به طور اتفاقی</option>
+<option>دعوت شده توسط ادمین ها</option>
+<option>دیگر</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">به طور کلی آرپی سکای رو چطور ارزیابی می‌کنید؟<span style="color: red;"> *</span><br/>
+<select id="data_17" name="data_17" style="" class="form-control"><option>خیلی خوب</option>
+<option>خوب</option>
+<option>معمولی</option>
+<option>بد</option>
+<option>خیلی بد</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">دلیل شما برای ارزیابی<span style="color: red;"> *</span><br/>
+<input type="text" id="data_19" name="data_19" style="" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">جو گپ سکای رو چطور ارزیابی میکنید<span style="color: red;"> *</span><br/>
+<select id="data_21" name="data_21" style="" class="form-control"><option>خیلی خوب</option>
+<option>خوب</option>
+<option>معمولی</option>
+<option>بد</option>
+<option>خیلی بد</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">دلیل شما برای ارزیابی جو (اختیاری)<br/>
+<input type="text" id="data_22" name="data_22" style="max-width : 450px;" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">تیم ادمین های سکای رو چطور ارزیابی می‌کنید؟<span style="color: red;"> *</span><br/>
+<select id="data_32" name="data_32" style="" class="form-control"><option>خیلی خوب</option>
+<option>خوب</option>
+<option>معمولی</option>
+<option>بد</option>
+<option>خیلی بد</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">دلیل شما برای ارزیابی ادمین ها<span style="color: red;"> *</span><br/>
+<input type="text" id="data_33" name="data_33" style="" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">به نظر شما مهم ترین بخش آرپی کدومه؟<span style="color: red;"> *</span><br/>
+<select id="data_23" name="data_23" style="" class="form-control"><option>Repost</option>
+<option>Report</option>
+<option>Tumblr</option>
+<option>Tweets</option>
+<option>Dev</option>
+<option>Show</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">دلیل شما برای انتخاب بخش (اختیاری)<br/>
+<input type="text" id="data_24" name="data_24" style="" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">اگر میتونستید یه بخش به سکای اضافه کنید، چی اضافه می‌کردید؟ (اختیاری)<br/>
+<textarea id="data_25" false name="data_25" style="" rows="4" class="form-control"></textarea>
+</div>
+<div style="padding-bottom: 18px;">برای بهبود آرپی چه پیشنهادی رو ارائه میدید<span style="color: red;"> *</span><br/>
+<textarea id="data_26" false name="data_26" style="" rows="6" class="form-control"></textarea>
+</div>
+<div style="padding-bottom: 18px;">دلیل شما برای انتخاب سکای<span style="color: red;"> *</span><br/>
+<input type="text" id="data_27" name="data_27" style="" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">تا چه حد از سرویس های بخش Dev (ربات ها و...) رضایت دارید؟<span style="color: red;"> *</span><br/>
+<select id="data_28" name="data_28" style="" class="form-control"><option>خیلی زیاد</option>
+<option>زیاد</option>
+<option>معمولی</option>
+<option>کم</option>
+<option>خیلی کم</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">دوست دارید چه چیز هایی به بخش Dev سکای اضافه بشه؟ (اختیاری)<br/>
+<textarea id="data_30" false name="data_30" style="" rows="3" class="form-control"></textarea>
+</div>
+<div style="padding-bottom: 18px;">سن شما<span style="color: red;"> *</span><br/>
+<input type="number" id="data_35" name="data_35" style="" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;">جنسیت شما<span style="color: red;"> *</span><br/>
+<select id="data_36" name="data_36" style="" class="form-control"><option>مرد</option>
+<option>زن</option>
+<option>بدون جنسیت</option>
+</select>
+</div>
+<div style="padding-bottom: 18px;">شماره حساب شما (اختیاری، برای دریافت جایزه لازمه)<br/>
+<input type="text" id="data_34" name="data_34" style="" class="form-control"/>
+</div>
+<div style="padding-bottom: 18px;"><input name="skip_Submit" value="ارسال" type="submit"/></div>
+<div>
+<script src="https://www.100forms.com/js/FORMKEY:KJPR2QDHMBHW" type="text/javascript"></script>
+</div>
+</form>
+</main>
+
+<footer>
+<svg viewBox="0 0 120 28">
+ <defs> 
+   <mask id="xxx">
+     <circle cx="7" cy="12" r="40" fill="#fff" />
+   </mask>
+   
+   <filter id="goo">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="
+           1 0 0 0 0  
+           0 1 0 0 0  
+           0 0 1 0 0  
+           0 0 0 13 -9" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+  	</filter>
+     <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+  </defs> 
+
+  <g class="sun">
+  <circle class="ball" cx="110" cy="8" r="4" stroke="none" stroke-width="0" fill="red" />
+  </g>
+  
+  <g class="moon">
+  <circle class="ball" cx="110" cy="8" r="3" stroke="none" stroke-width="0" fill="#f0f0f0" />
+  </g>
+  
+   <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use> 
+   <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+ 
+
+  <g class="gooeff">
+  <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
+  <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
+  <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
+
+    <!-- g mask="url(#xxx)">
+    <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+    </g>
+  </g -->
+
+</svg>
+
+<div>
+
+<h3>Sekai Role Play</h3>  
+<br>
+<a href="https://t.me/Sekaaimain">Telegram</a><a href="https://t.me/sekaiDevelopment">Dev</a>
+<br>
+<br>
+<div style="font-size:.03em; font-weight: bold" >
+  Thanks you<br>
+<a href="https://www.100forms.com" id="lnk100" title="form to email" style="text-decoration:none;color:white"> From you
+</a>
+</div> 
+</div>
+</footer>
+
+
+
+  
+<script type="text/javascript">
+function validateForm() {
+if (isEmpty(document.getElementById('data_19').value.trim())) {
+alert('دلیل شما برای ارزیابی is required!');
+return false;
+}
+if (isEmpty(document.getElementById('data_33').value.trim())) {
+alert(' فیلد دلیل شما برای ارزیابی ادمین ها الزامی است');
+return false;
+}
+if (isEmpty(document.getElementById('data_26').value.trim())) {
+alert('فیلد برای بهبود آرپی چه پیشنهادی رو ارائه میدید الزامی است');
+return false;
+}
+if (isEmpty(document.getElementById('data_27').value.trim())) {
+alert('فیلد دلیل شما برای انتخاب سکای الزامی است');
+return false;
+}
+if (isEmpty(document.getElementById('data_35').value.trim())) {
+alert('فیلد سن شما الزامی است');
+return false;
+}
+return true;
+}
+function isEmpty(str) { return (str.length === 0 || !str.trim()); }
+function validateEmail(email) {
+var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,15}(?:\.[a-z]{2})?)$/i;
+return isEmpty(email) || re.test(email);
+}
+</script>
+
+</body>
+</html>
