@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Naruto";
+  src: url('font/ninja-naruto.regular.ttf');
+}
+
+body {
+    background-color: #e0990b;
+    font-family: 'Arial', sans-serif;
+    margin:0;
+    padding:0;
+    
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-family: Naruto ;
+    text-shadow: 2px 2px black;
+}
+
+.title img{
+  width: 6em;
+  margin-right: 0em;
+}
+.title div{
+  display: inline-block;
+  width: 15em;
+  margin-right:.2em;
+  padding-bottom:2em ;
+  text-align:center ;
+  font-weight: bold;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fadca0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select {
+    background-color: #f8f8f8;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #880808;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+span {
+    color: red;
+}
+
+.title span{
+  padding:.3em;
+}
+
+script {
+    display: none;
+}
+
+
+
+footer {
+  width:100%;
+  bottom:0px;
+  margin:0;
+  margin-top:2em;
+  position: relative;
+}
+
+footer::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   height: 9px;
+   background-color: #000;
+}
+
+footer div {
+  background-color:#000 ;
+  margin: -20px 0px 0px 0px;
+  padding:0px;
+  padding-bottom:1em;
+  color: #fff;
+  text-align:center;
+}
+
+footer a{
+  color: #fff;
+  text-decoration: none ;
+}
+footer div h3{
+  display:inline-block ;
+  font-weight: bold;
+}
+
+footer div a{
+  padding:.5em;
+  margin:15%;
+  font-weight: bold;
+  
+}
+
+footer div div{
+  margin-top :2rem ;
+  display:inline-block;
+}
+
+svg {
+  width:100%;
+  
+}
+
+@keyframes sunMovement {
+  0% {
+    transform: translateX(100%) translateY(0);
+  }
+  50% {
+    transform: translateX(0) translateY(-3px) ;
+  }
+  100% {
+    transform: translateX(-100%) translateY(0);
+  }
+}
+
+@keyframes moonMovement {
+  0% {
+    transform: translateX(100%) translateY(0);
+    opacity: 100;
+  }
+  50% {
+    transform: translateX(0) translateY(-5px) ;
+  }
+  100% {
+    transform: translateX(-100%) translateY(0);
+  }
+}
+
+@keyframes cloudMovement {
+  0% {
+    transform: translateX(-25%);
+    
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+@keyframes wave {
+  to {
+    transform: translateX(-100%) translateY(0);
+  }
+}
+
+.wave {
+  animation: wave 40s linear infinite;
+}
+
+.moon {
+  animation: moonMovement 16s linear infinite;
+  animation-delay: 8s; 
+  opacity: 0;
+}
+
+.sun {
+  animation: sunMovement 16s linear infinite;
+  
+}
+
+.gooeff{
+  animation: cloudMovement 30s linear infinite;
+}
