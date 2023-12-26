@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+<style>
+@font-face {
+  font-family: "OPTIIgnite";
+  src: url('font/OPTIIgnite.otf');
+  
+}
+  body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #e0990b;
+  margin: 0;
+  text-align:center ;
+}
+
+.centered-div {
+text-align:center ;
+}
+
+.centered-div img {
+  width: 75% ;
+}
+
+.thank {
+  font-family: OPTIIgnite;
+  font-size: 3em ;
+  text-shadow: 2px 2px burlywood ;
+  margin-top:0;
+}
+
+.text {
+  text-align:center ;
+  width:90%;
+  margin: 0 auto;
+}
+
+#heart {
+  width:1.3em ;
+  position: absolute;
+  margin:.3em;
+  text-shadow: 2px 2px black;
+  animation: pulse 2s infinite;
+}
+
+.gift{
+  width:85%;
+  margin: 0 auto;
+  margin-top: 2em ;
+  border: 1px solid black ;
+  border-radius: .5em;
+  padding:1em;
+  background-color:orange ;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.15);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+</style>
+<body>
+  
+<div class="centered-div">
+    <img src="thanks2.png">
+  <h2 class="thank">Thanks You</h2>
+  <div class="text" dir="rtl"><b>جواب های شما برای ما ارسال شد، ما تک به تک جواب های شمارو می‌خونیم و از جواب های شما برای بهبود و توسعه آرپی استفاده می‌کنیم، خیلی متشکریم که در راه بهبود مارو یاری میکنید و خیلی خوشحالیم که شخصی مثل شمارو کنار خودمون داریم   
+    </b><img src="heart.svg" id="heart">
+  </div>
+  
+  <div class="gift">
+    در صورتی که شماره حساب وارد شده صحیح باشه و اولین بار باشه که نظر سنجی رو تکمیل میکنید، کمتر از یک روز مبلغ 1 روبی به حساب شما واریز میشه.
+    
+  </div>
+</div>
+
+</body>
+</html>
